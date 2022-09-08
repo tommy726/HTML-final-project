@@ -60,25 +60,25 @@ table {
     justify-content: flex-end;
     padding: 6px 4px;
 }
-.socialMedia li{
-    display: flex;
-    font-size: 12px;
-    align-items: center;
+.socialMedia img{
+    vertical-align:text-top;
+    margin-right: 2px;
 }
-.iconText{
+.socialMedia a{
+    font-size: 12px;
     display: block;
     padding: 1px 8px 1px 4px;
     text-decoration: none;
 }
-#fb{
+.fb{
     border-right: 1px solid #cccccc ;
     margin-right: 8px;
     color: #4460a0;
 }
-#tw{
+.tw{
     color: #00aaec;
 }
-#fb:hover, #tw:hover{
+.fb:hover, .tw:hover{
     color: #000;
 }
 .navbar{
@@ -124,7 +124,9 @@ table {
 }
 .banner{
     background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
-    padding: 89px 0;
+    height: 346px;
+    display: flex;
+    align-items: center;
 }
 .banner h2{
     font-size: 32px;
@@ -132,11 +134,12 @@ table {
     line-height: 1.5;
     color: #fff;
     background-color: rgba(0, 0, 0, .2);
+    flex-grow: 1;
 }
 .course{
     display: flex;
-    padding: 64px 0;
     font-size: 14px;
+    margin-top: 64px;
 }
 .courseItem{
     width: 303px;
@@ -173,7 +176,8 @@ span{
     margin-left: 20px;
 }
 .difference{
-    padding: 0 80px 60px 80px;
+    margin-top: 64px;
+    padding: 0 80px;
 }
 .difference h2{
     font-size: 22px;
@@ -201,8 +205,9 @@ span{
     background: -webkit-linear-gradient(#00644b,#009872);
     padding: 38px 20px 30px 20px;
     color: #fff;
+    margin-top: 60px;
 }
-.information h2{
+.information h3{
     font-size: 22px;
     line-height: 1.5;
     text-align: center;
